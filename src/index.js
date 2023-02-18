@@ -49,7 +49,7 @@ searchForm.addEventListener('submit', onSubmitSearchForm);
 
 async function onSubmitSearchForm(e) {
   e.preventDefault();
-  searchQuery = e.currentTarget.searchQuery.value;
+  searchQuery = e.currentTarget.searchQuery.value.trim();
   currentPage = 1;
 
   if (searchQuery === '') {
